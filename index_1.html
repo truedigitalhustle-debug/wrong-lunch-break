@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LUNCH — He Ran at the Wrong Girl | True Digital Hustle</title>
+<meta name="description" content="Every prompt and the exact method I used to make an 18-second monster-movie scene with AI: four reference images and two video prompts. Free, no email.">
+<meta property="og:title" content="LUNCH — Free Prompts + Method">
+<meta property="og:description" content="A zombie runs at a girl on her lunch break. She is not the one in danger. Every prompt is here. Free, no email.">
+<meta property="og:image" content="og.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0a09;--card:#171412;--line:#2a2521;--ink:#f3ede4;--mute:#a79d90;--gold:#e0a84a;--gold2:#f2c775;--purple:#6c2bd9}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.65;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;background:radial-gradient(ellipse at 50% -10%,rgba(224,168,74,.12),transparent 55%),repeating-linear-gradient(0deg,transparent 0 39px,rgba(255,255,255,.015) 39px 40px),repeating-linear-gradient(90deg,transparent 0 39px,rgba(255,255,255,.015) 39px 40px);pointer-events:none;z-index:0}
+main{position:relative;z-index:1}
+.mono{font-family:"JetBrains Mono",monospace;letter-spacing:.18em;text-transform:uppercase;font-size:.72rem}
+.wrap{max-width:920px;margin:0 auto;padding:0 22px}
+section{padding:92px 0;border-top:1px solid var(--line)}
+h1{font-family:"Playfair Display",serif;font-weight:900;font-size:clamp(2.4rem,7.5vw,4.6rem);line-height:1.03;margin:.25em 0;letter-spacing:-.01em}
+h2{font-family:"Playfair Display",serif;font-weight:700;font-size:clamp(1.7rem,4vw,2.5rem);margin:.15em 0 .5em;line-height:1.15}
+h3{font-family:"Playfair Display",serif;font-size:1.3rem;margin:.7em 0 .3em}
+p{color:var(--mute)}
+p.lead{font-size:1.08rem;color:var(--ink)}
+.eyebrow{color:var(--gold);margin-bottom:14px}
+.hero{min-height:88vh;display:flex;align-items:center;border-top:0;padding:70px 0}
+.btn{display:inline-block;background:linear-gradient(180deg,var(--gold2),var(--gold));color:#1a1206;font-family:"JetBrains Mono",monospace;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;padding:18px 34px;border-radius:999px;text-decoration:none;font-weight:600;box-shadow:0 10px 40px rgba(224,168,74,.22)}
+.btn.ghost{background:transparent;color:var(--gold);border:1px solid var(--gold);box-shadow:none}
+.video{max-width:640px;margin:34px auto 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#000;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.video video{display:block;width:100%}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin:18px 0}
+.card .head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.tag{font-family:"JetBrains Mono",monospace;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold);border-radius:999px;padding:5px 10px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 16px;margin:8px 0 12px;font-family:"JetBrains Mono",monospace;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+pre{background:#0d0c0b;border:1px solid var(--line);border-radius:10px;padding:18px;font-family:"JetBrains Mono",monospace;font-size:.78rem;line-height:1.6;color:#d9d1c5;white-space:pre-wrap;word-wrap:break-word;margin:0;max-height:340px;overflow:auto}
+pre.open{max-height:none}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+button{cursor:pointer;font-family:"JetBrains Mono",monospace;font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;border-radius:8px;padding:12px 18px;border:1px solid var(--gold);background:transparent;color:var(--gold)}
+button.primary{background:var(--gold);color:#1a1206}
+button.copied{background:#1f7a3c;border-color:#1f7a3c;color:#fff}
+.steps{counter-reset:s;display:grid;gap:12px}
+.step{display:grid;grid-template-columns:46px 1fr;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+.step::before{counter-increment:s;content:counter(s,decimal-leading-zero);font-family:"JetBrains Mono",monospace;color:var(--gold);font-size:1.1rem;padding-top:3px}
+.step b{display:block;color:var(--ink)}
+.step span{color:var(--mute);font-size:.94rem}
+.tip{border-left:3px solid var(--gold);padding:6px 0 6px 16px;margin:16px 0;color:var(--ink)}
+.tip span{color:var(--mute)}
+.big{background:linear-gradient(180deg,rgba(108,43,217,.2),rgba(108,43,217,.05));border:1px solid rgba(108,43,217,.5);border-radius:16px;padding:30px;margin:26px 0}
+.big h3{margin-top:0}
+.center{text-align:center}
+.stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin:24px 0}
+.stat div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;text-align:center}
+.stat b{display:block;font-family:"Playfair Display",serif;font-size:2rem;color:var(--gold)}
+.stat span{font-family:"JetBrains Mono",monospace;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.shot{font-family:"JetBrains Mono",monospace;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin:28px 0 6px}
+footer{padding:60px 0 46px;text-align:center;border-top:1px solid var(--line)}
+footer .mono{color:var(--mute);letter-spacing:.12em}
+@media(max-width:700px){section{padding:62px 0}.video{max-width:100%}}
+</style>
+</head>
+<body>
+<main>
+
+<section class="hero">
+<div class="wrap center">
+<div class="mono eyebrow">True Digital Hustle</div>
+<h1>HE RAN AT THE<br>WRONG GIRL.</h1>
+<p class="lead" style="max-width:620px;margin:0 auto 10px">No actors. No crew. No creature suit. Four pictures and two prompts.</p>
+<p style="max-width:620px;margin:0 auto 30px">A zombie sprints at a grocery worker on her lunch break. She sighs, puts her noodles down, and turns into something much worse than he is. This page has every prompt, the reference setup, and the mistakes that cost me retakes so they don't cost you. Free, no email.</p>
+<a class="btn" href="#method">Get the method ↓</a>
+<div class="video" style="max-width:380px"><video controls playsinline preload="metadata" poster="poster.jpg" src="lunch.mp4"></video></div>
+<div class="mono" style="margin-top:14px;color:var(--mute)">The result · 18 seconds · Seedance 2.5 · two clips</div>
+</div>
+</section>
+
+<section id="method">
+<div class="wrap">
+<div class="mono eyebrow">The method</div>
+<h2>Two clips. One reference for each thing on screen.</h2>
+<p>The girl, the creature, the place and the zombie each get their own picture. That is what keeps them the same from shot to shot. The video prompts then only have to say what happens.</p>
+<div class="steps">
+<div class="step"><div><b>Make the girl.</b><span>One character sheet: full body on the left, close-up on the right. This is @Image1 .</span></div></div>
+<div class="step"><div><b>Make the place.</b><span>One empty photo of the location with no people in it. This is @Image3 .</span></div></div>
+<div class="step"><div><b>Make the creature standing in that place.</b><span>Feed the girl and the place into the image model as references and ask for her creature form standing there, in her clothes. This is @Image2 .</span></div></div>
+<div class="step"><div><b>Make the zombie.</b><span>One more character sheet. This is @Image4 .</span></div></div>
+<div class="step"><div><b>Generate Clip 1 as a cheap draft.</b><span>Seedance 2.5, 9:16, with the four pictures loaded in that order. On Higgsfield, turn Draft on: a draft costs a fraction of a full render, so you can check the idea before you pay for it.</span></div></div>
+<div class="step"><div><b>Generate Clip 2 the same way.</b><span>Same four pictures, same order. It opens on the swallow and ends on the bite.</span></div></div>
+<div class="step"><div><b>Cut, flip if you need to, and join.</b><span>Trim each clip to the shots that work and put them back to back. If someone runs in from the wrong side after a cut, mirror that shot.</span></div></div>
+</div>
+<div class="stat">
+<div><b>4</b><span>Pictures</span></div>
+<div><b>2</b><span>Clips</span></div>
+<div><b>18</b><span>Seconds</span></div>
+<div><b>0</b><span>Cameras</span></div>
+</div>
+<div class="big">
+<h3>The tools</h3>
+<p style="color:var(--ink)">I made all of it on <a href="https://higgsfield.ai?fpr=tdh" target="_blank" rel="noopener" style="color:var(--gold2)">Higgsfield</a>: the four pictures with Nano Banana Pro and both clips with Seedance 2.5. If you sign up through my link you get a personal discount of up to 50% off, active for three hours from the moment you log in, so have your idea ready first.</p>
+<p style="color:var(--ink)">On Higgsfield, write the tags with a capital I, as @Image1 , and keep a plain space on both sides of every tag or the panel won't link it to your upload.</p>
+<p style="margin-bottom:0"><a class="btn" href="https://higgsfield.ai?fpr=tdh" target="_blank" rel="noopener">Try Higgsfield ↗</a></p>
+</div>
+</div>
+</section>
+
+<section id="prompts">
+<div class="wrap">
+<div class="mono eyebrow">The prompts</div>
+<h2>Four pictures, then the two clips, in order.</h2>
+<p>These are the cleaned-up versions, trimmed to the shots that made the final cut, with the fixes from my retakes already folded in. Change the girl, the job and the place to make it yours.</p>
+<div class="card">
+<div class="head"><h3 style="margin:0">Picture 1 — The girl</h3><span class="tag">Image</span></div>
+<div class="meta"><span>Nano Banana Pro · 16:9</span><span>No references</span></div>
+<p>She should look bored, not scared. That is the whole joke.</p>
+<pre>Split-screen character sheet composition, left side a full-body shot of the character standing upright facing the camera with both feet flat on the ground and arms relaxed at the sides, full head-to-toe framing, right side a tight close-up chest-up portrait of the same character, identical original female character on both sides, pure white seamless studio background, a woman in her late twenties with warm medium-brown skin, oval face with a defined jawline, dark brown almond-shaped eyes with heavy half-lowered eyelids and a tired unimpressed expression, dark brown curly hair pulled up into a loose high bun, visible fine skin texture with natural pores, minimal makeup, no beauty filter, average slim build, wearing a plain heather-grey crew-neck t-shirt, a forest-green cotton bib apron with a neck strap and a small blank white name tag on the chest, straight-leg mid-blue denim jeans, worn black work sneakers, soft diffused studio lighting, unretouched commercial photography style, 4K, single subject only, no props, no text, no watermark, no logos</pre>
+<div class="actions"><button class="primary" data-copy>Copy prompt</button><button data-expand>Expand</button></div>
+</div>
+
+<div class="card">
+<div class="head"><h3 style="margin:0">Picture 3 — The place</h3><span class="tag">Image</span></div>
+<div class="meta"><span>Nano Banana Pro · 9:16</span><span>No references</span></div>
+<p>Keep people out of it. Put the food on the dock so it is there in every shot.</p>
+<pre>Photoreal vertical cinematic location photograph, empty of people. The back of a mid-size grocery store in late afternoon golden-hour light. In the right half of the frame a raised concrete loading dock about one meter high with a chipped yellow-painted edge, a large closed corrugated steel roll-up door in faded grey set into a tan cinder-block wall, a stack of red and blue plastic milk crates beside the door, a single white paper takeout noodle carton with chopsticks resting on the dock edge. In the left half a long straight empty asphalt service lane runs away from the camera into the distance, lined by a chain-link fence, a green dumpster and power poles. Low warm sun from the left casting long shadows across the lane, light haze in the distance. Camera at standing eye height looking down the lane with the dock in the right foreground. Natural color, stained concrete, fine film grain, shot like a live-action feature film still, 4K. No people, no vehicles, no readable signs, no text, no logos</pre>
+<div class="actions"><button class="primary" data-copy>Copy prompt</button><button data-expand>Expand</button></div>
+</div>
+
+<div class="card">
+<div class="head"><h3 style="margin:0">Picture 2 — The creature</h3><span class="tag">Image</span></div>
+<div class="meta"><span>Nano Banana Pro · 9:16</span><span>References: the girl, then the place</span></div>
+<p>Make it after the first two, with both loaded as references, so it wears her clothes and stands in her location.</p>
+<pre>A frame from a big-budget live-action monster film, vertical, shot handheld from a low three-quarter angle about one meter above the ground. Location is the loading dock and service lane from the second reference image, same late-afternoon golden-hour sun from the left, long shadows, light dust in the air. Standing in the lane beside the dock is a towering non-human creature that the woman from the first reference image has transformed into. It is taller than the top of the steel roll-up door, hunched forward, with a long curved spine, very long thin arms with long clawed fingers, one hand resting heavily on the yellow edge of the concrete dock. Its skin is entirely non-human: dark slate-grey, rough and leathery like elephant hide with pale cracks and a row of bony ridges down the spine, gaunt anatomy with a narrow ribbed chest. It still wears the remains of her clothes: the forest-green apron bib stretched tight across its chest and tied at the waist, strips of grey t-shirt on the shoulders, blue jeans split at the knees and far too short. Its head is long and hairless except for her dark curly hair bun still perched on top, with small deep-set amber eyes and a huge jaw lined with rows of crooked pale teeth. The creature is asymmetrical and organic, with real weight on its feet and a hard contact shadow on the asphalt. Practical creature-effects realism like a physical animatronic suit, natural depth of field, anamorphic lens character, fine film grain, natural color, 4K. Only the creature in frame, no other people, no text, no logos</pre>
+<div class="actions"><button class="primary" data-copy>Copy prompt</button><button data-expand>Expand</button></div>
+</div>
+
+<div class="card">
+<div class="head"><h3 style="margin:0">Picture 4 — The zombie</h3><span class="tag">Image</span></div>
+<div class="meta"><span>Nano Banana Pro · 16:9</span><span>No references</span></div>
+<p>He opens the video with his face filling the frame, so the close-up matters most.</p>
+<pre>Split-screen character sheet composition, left side a full-body shot of the character standing upright facing the camera with arms hanging at the sides, full head-to-toe framing, right side a tight close-up chest-up portrait of the same character with his mouth open in a snarl, identical original male character on both sides, pure white seamless studio background, horror film infected-person makeup design: a thin man in his thirties with pale grey-toned skin, sunken cheeks, dark purple-grey rings around bloodshot eyes with clouded pale irises, dark veins at the temples and neck, cracked lips, stained uneven teeth, short messy dark-brown hair matted with dirt, wearing a torn dirty light-grey zip hoodie, a stained off-white t-shirt, dark charcoal jeans ripped at one knee, scuffed brown work boots, realistic practical makeup-effects look, soft diffused studio lighting, 4K, single subject only, no props, no text, no watermark, no logos</pre>
+<div class="actions"><button class="primary" data-copy>Copy prompt</button><button data-expand>Expand</button></div>
+</div>
+
+<div class="card">
+<div class="head"><h3 style="margin:0">Clip 1 — The break gets interrupted</h3><span class="tag">9 sec</span></div>
+<div class="meta"><span>@Image1 the girl</span><span>@Image2 the creature</span><span>@Image3 the place</span><span>@Image4 the zombie</span><span>9:16 · audio on</span></div>
+<p>The scare, her reaction, and the change. The change is filmed from behind her while she walks, which is what makes it look real.</p>
+<pre>SCENE CONTEXT
+Late afternoon behind a grocery store. A grocery worker on her break sits on the edge of a concrete loading dock eating noodles. An infected man sprints down the service lane toward her. She calmly puts her food down, steps into the lane, and her own body stretches and grows into a towering grey creature.
+
+ACTIVE REFERENCES
+The worker is @Image1 a woman in her late twenties with a green grocery apron over a grey t-shirt and blue jeans, calm and unbothered, low dry adult female voice. 100% matches the reference.
+Her creature form is @Image2 a towering gaunt creature with dark slate-grey leathery skin, a long curved spine with bony ridges, very long arms with clawed fingers, her dark hair bun still on top of its head, her green apron across its chest and blue jeans split at the knees. Its head rises above the top of the roll-up door. 100% matches the reference.
+The setting is @Image3 the concrete loading dock with the yellow edge, the steel roll-up door, stacked milk crates and the long empty service lane. 100% matches the reference.
+The infected man is @Image4 a thin man in a torn grey hoodie with pale skin, dark-rimmed eyes and an open snarling mouth. 100% matches the reference.
+
+FIRST FRAME / BLOCKING
+Frame is filled by the face of @Image4 running straight at the camera, mouth open, the service lane of @Image3 blurred behind him. Everyone is in motion from frame one.
+
+FORMAT MODE
+Timed multishot. Cuts only at the specified points, the camera does not cut on its own.
+
+OPTICS
+0.0s to 2.0s CU 29 degrees. 2.0s to 4.5s MS 47 degrees. 4.5s to 9.0s MCU widening to WS 47 degrees. Anamorphic character, shallow depth of field, natural motion blur, no drift mid-segment.
+
+CAMERA
+Handheld feature-film operator with a 1 to 2 cm tremor, always at a three-quarter angle to the subject, camera about one and a half meters above the ground, soft highlight roll-off. In the 4.5s segment the operator follows behind her and tilts up to keep her head in frame as she rises.
+
+ACTION
+0.0s to 2.0s — @Image4 sprints at the camera at 20 km/h, face filling the frame, snarling, arms pumping.
+2.0s HARD CUT
+2.0s to 4.5s — @Image1 sits on the dock edge with legs dangling, a white noodle carton in her left hand and chopsticks in her right. She chews, turns her head toward the lane, lowers the chopsticks, exhales through her nose and says &quot;Seriously?&quot; She sets the carton down on the concrete beside her.
+4.5s HARD CUT
+4.5s to 9.0s — One continuous handheld shot. @Image1 drops off the dock onto the asphalt and walks into the lane at 4 km/h. Her head tilts sharply to one side, her shoulders roll back, and her spine lengthens upward one vertebra at a time, bony ridges pushing up along her back as the grey t-shirt tears across the shoulders. Her arms stretch until her fingers pass her knees and grow claws, her skin darkens to slate-grey leather from the hands and neck inward, the jeans split at the knees and stay on. She rises until her head is above the top of the roll-up door and she is fully @Image2 . @Image4 is a small running figure far down the lane ahead of her.
+
+PERFORMANCE
+@Image1 stays relaxed and mildly annoyed, eyelids half lowered. The growth looks effortful in the body only: tendons stand out in the neck, the jaw clenches. Pore-level skin detail, fine leathery texture on the creature.
+
+PHYSICS
+The creature has real mass. Every step lands with weight and a small camera shake, dust lifts from the asphalt, torn fabric swings with inertia, hard contact shadows under her feet. The body is solid, three-dimensional and organic at every stage.
+
+LIGHTING
+Golden hour in every shot. Low orange sun from the left at 4000K, pale gold sky near the horizon, long warm shadows across the lane, warm rim light on her hair and on the creature&#x27;s spine ridges.
+
+AUDIO
+All spoken dialogue is in English in one consistent low dry adult female voice with accurate lip sync. Distant traffic hum, fast slapping footsteps and ragged snarling from the runner, deep cracking and creaking of bone and ripping cotton as she grows. No music.
+
+STYLE
+Photoreal live-action studio monster film, practical animatronic creature realism, natural color, fine film grain.
+
+OUTPUT SETTINGS
+9:16 vertical, real-time speed in every segment.
+
+POSITIVE LOCKS
+The transformation is her own body changing shape in three dimensions, continuous from her human form to @Image2 . The creature wears the blue jeans and the green apron the whole time. The dock, roll-up door, crates and lane stay unchanged in every shot. All voices are English.</pre>
+<div class="actions"><button class="primary" data-copy>Copy prompt</button><button data-expand>Expand</button></div>
+</div>
+
+<div class="card">
+<div class="head"><h3 style="margin:0">Clip 2 — Lunch</h3><span class="tag">11 sec</span></div>
+<div class="meta"><span>Same four pictures, same order</span><span>9:16 · audio on</span></div>
+<p>The swallow, the walk back, the hop up and the bite.</p>
+<pre>SCENE CONTEXT
+Late afternoon golden hour behind a grocery store, in the service lane beside a concrete loading dock. A towering grey creature that is really a grocery worker swallows an infected man who runs at it, then shrinks back into the woman as it walks to the dock, and she hops up to sit and goes back to eating her noodles.
+
+ACTIVE REFERENCES
+The worker is @Image1 a woman in her late twenties with a green grocery apron over a grey t-shirt and blue jeans, calm and unbothered, low dry adult female voice. 100% matches the reference.
+Her creature form is @Image2 a towering gaunt creature with dark slate-grey leathery skin, a long curved spine with bony ridges, very long arms with clawed fingers, small amber eyes, her dark hair bun on top of its head, her green apron across its chest, blue jeans split at the knees, and a huge jaw lined with crooked pale teeth. Its head rises above the top of the roll-up door and a standing man reaches only to its hip. 100% matches the reference.
+The setting is @Image3 the concrete loading dock with the yellow edge, the steel roll-up door, stacked milk crates, a white noodle carton with chopsticks sitting on the dock edge, and the long empty service lane. 100% matches the reference.
+The infected man is @Image4 a thin man in a torn grey hoodie with pale skin and dark-rimmed eyes. 100% matches the reference.
+
+FIRST FRAME / BLOCKING
+Low angle from just behind the right shoulder of @Image4 as he runs toward @Image2 which stands in the lane beside the dock of @Image3 with warm orange sunlight on its left side and a pale gold sky behind it. Everyone is in motion from frame one.
+
+FORMAT MODE
+Timed multishot. Cuts only at the specified points, the camera does not cut on its own.
+
+OPTICS
+0.0s to 3.0s low-angle WS 63 degrees. 3.0s to 8.0s WS 47 degrees. 8.0s to 11.0s MS 47 degrees. Anamorphic character, shallow depth of field, natural motion blur, no drift mid-segment.
+
+CAMERA
+Handheld feature-film operator with a 1 to 2 cm tremor, at a three-quarter angle to the subject, soft highlight roll-off. In the first segment the camera sits about half a meter above the ground looking up. In the second segment the camera is about one and a half meters above the ground, walks alongside at 4 km/h and tilts down as she gets shorter.
+
+ACTION
+0.0s to 3.0s — @Image4 runs in, his head level with the creature&#x27;s hip. @Image2 bends down over him, its jaw opens wide, and it closes its mouth over his head and shoulders, lifts him clear of the ground and tips its head back. His legs slide inside in two gulps. The jaw closes and its long throat ripples once.
+3.0s HARD CUT
+3.0s to 8.0s — One continuous shot. @Image2 turns and walks toward the dock at 4 km/h. With each step it gets shorter: the spine settles down one vertebra at a time and the bony ridges sink flat, the long arms draw back to normal length and the claws become fingers, the slate-grey skin warms back to her medium-brown skin from the face outward, the apron and t-shirt sit whole and neat on her again. After five steps she is fully @Image1 at normal human height. She plants both palms on the yellow dock edge, hops up, turns and sits with her legs dangling beside the noodle carton.
+8.0s HARD CUT
+8.0s to 11.0s — @Image1 seated on the dock edge. She wipes the corner of her mouth with her thumb, picks up the white noodle carton, takes a bite with the chopsticks, chews and says &quot;Cold now.&quot;
+
+PERFORMANCE
+@Image1 stays relaxed and mildly annoyed, eyelids half lowered, rolls her neck once as she finishes shrinking. Pore-level skin detail, fine leathery texture on the creature, living eyes with catch-lights from the low sun.
+
+PHYSICS
+The creature has real mass. Every step lands with weight and a small camera shake that gets lighter as she shrinks, dust lifts from the asphalt, fabric swings with inertia, hard contact shadows under feet and hands, her long shadow on the asphalt shortens with her.
+
+LIGHTING
+Golden hour in every shot. Low orange sun from the left at 4000K, pale gold sky near the horizon, long warm shadows across the lane, warm rim light on the creature&#x27;s skin and spine ridges and on her hair. The same warm light and sky in all three segments.
+
+AUDIO
+All spoken dialogue is in English in one consistent low dry adult female voice with accurate lip sync. Distant traffic hum, running footsteps, a low rumbling growl, a muffled shout cut short, two heavy gulps, heavy footsteps that get lighter, sneakers scuffing concrete as she hops up, then quiet and the small sound of chopsticks in a carton. No music.
+
+STYLE
+Photoreal live-action studio monster film, practical animatronic creature realism, natural color, fine film grain.
+
+OUTPUT SETTINGS
+9:16 vertical, real-time speed in every segment.
+
+POSITIVE LOCKS
+The shrinking is her own body changing shape in three dimensions, continuous from @Image2 to her human form. The dock, roll-up door, crates and lane stay unchanged in every shot. The creature wears the blue jeans and the green apron in every shot it appears. Golden-hour light and a pale gold sky in every shot. She is fully human and whole from the moment she reaches the dock. All voices are English.</pre>
+<div class="actions"><button class="primary" data-copy>Copy prompt</button><button data-expand>Expand</button></div>
+</div>
+
+</div>
+</section>
+
+<section id="tips">
+<div class="wrap">
+<div class="mono eyebrow">What I learned the hard way</div>
+<h2>Five things that saved this video</h2>
+<div class="tip"><b>The change has to happen to the body.</b> <span>My first version had a mouth open up across her like a zipper while she stood still facing the camera. It looked like a sticker laid over the picture. The version that worked has her spine, arms and skin change while she walks.</span></div>
+<div class="tip"><b>Move the camera.</b> <span>A locked-off, straight-on shot makes any effect look pasted on. Handheld, at an angle, following her, looks like a film crew was there.</span></div>
+<div class="tip"><b>Too much wet flesh gets blocked.</b> <span>A design with an open chest and bare skin was refused as unsafe. Dry grey leathery skin, with her apron still on, went straight through.</span></div>
+<div class="tip"><b>Say the clothes stay on.</b> <span>In one take her jeans vanished halfway through the change and came back in the next shot. I cut away just before it happened, and added a line to the prompt so it doesn't happen to you.</span></div>
+<div class="tip"><b>Check which side people come from.</b> <span>After I joined the clips, the zombie ran in from the wrong side. Mirroring that one shot fixed it for free.</span></div>
+<div class="big">
+<h3>Draft first, pay later</h3>
+<p style="color:var(--ink);margin-bottom:0">Every take on this page started as a low-resolution draft. I threw two of them away. Only render the full version of a take you have already watched and liked.</p>
+</div>
+</div>
+</section>
+
+<section id="start" class="center">
+<div class="wrap">
+<div class="mono eyebrow">Your turn</div>
+<h2>Now pick who gets interrupted.</h2>
+<p style="max-width:600px;margin:0 auto 32px">A barber, a crossing guard, a grandma feeding pigeons. Somebody calm, something charging at them, and a very bad decision. Build it, then tag me. I want to see your version.</p>
+<a class="btn" href="https://www.instagram.com/truedigitalhustle" target="_blank" rel="noopener">Follow @truedigitalhustle ↗</a>
+<a class="btn ghost" href="https://higgsfield.ai?fpr=tdh" target="_blank" rel="noopener" style="margin:14px 0 0">Get the tool — up to 50% off ↗</a>
+</div>
+</section>
+
+</main>
+<footer>
+<div class="wrap">
+<div class="mono">Built by True Digital Hustle — AI prompts. Cinematic workflows. No boring content.</div>
+<div class="mono" style="margin-top:8px">Contains an affiliate link to Higgsfield. I may earn a commission if you sign up through it.</div>
+<div class="mono" style="margin-top:8px">© 2026 True Digital Hustle</div>
+</div>
+</footer>
+<script>
+document.querySelectorAll('[data-copy]').forEach(b=>{b.addEventListener('click',async()=>{const pre=b.closest('.card').querySelector('pre');try{await navigator.clipboard.writeText(pre.innerText)}catch(e){const r=document.createRange();r.selectNodeContents(pre);const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges()}const t=b.textContent;b.textContent='Copied ✓';b.classList.add('copied');setTimeout(()=>{b.textContent=t;b.classList.remove('copied')},1800)})});
+document.querySelectorAll('[data-expand]').forEach(b=>{b.addEventListener('click',()=>{const pre=b.closest('.card').querySelector('pre');pre.classList.toggle('open');b.textContent=pre.classList.contains('open')?'Collapse':'Expand'})});
+</script>
+</body>
+</html>
